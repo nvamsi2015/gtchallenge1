@@ -16,7 +16,7 @@ def get_bill(bedrooms, corp, bore, no_of_guests_in_month):
     bore_bill = (bore/(corp+bore))*alloted_liters*1.5  
     
 
-    if no_of_liters_from_tanker <= 500:
+    if no_of_liters_from_tanker <= 500:                     # Depending on slabs tanker_water bill is calculated 
         tanker_bill = 2 * no_of_liters_from_tanker
     elif no_of_liters_from_tanker <= 1500:
         tanker_bill = 1000 + 3*(no_of_liters_from_tanker-500)
