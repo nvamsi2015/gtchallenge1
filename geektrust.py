@@ -52,7 +52,7 @@ def main():
     corp,bore =[int(char) for char in ratio.split(":")]     # unpacking the integers in the rario of corporaion_water:borewell_water
     
 
-    print(*get_bill(no_of_bedrooms, corp, bore, no_of_guests_in_month)) # unpacking and printing the water_used_in_liters and bill
+    print(*get_bill(no_of_bedrooms, corp, bore, no_of_guests_in_month)) # unpacking and printing the water_used_in_liters and bill using *
 
     return None
 
